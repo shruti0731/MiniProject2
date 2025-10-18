@@ -1,74 +1,127 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🌿 AnuvaadAI – English to Sanskrit Translator  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Ancient wisdom meets modern intelligence.**  
+AnuvaadAI is a web-based application that translates **Sanskrit text to English** using advanced Natural Language Processing (NLP) models. It provides both **text input** and **file upload** functionalities, enabling users to seamlessly translate Sanskrit scripts and shlokas with clarity and accuracy.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 **Project Background**
 
-### `npm start`
+Sanskrit, one of the oldest and most complex languages in the world, holds immense cultural and linguistic importance. However, its usage has declined due to the lack of accessible translation tools.  
+**AnuvaadAI** bridges this gap by leveraging **AI-driven translation models** to make Sanskrit understanding and translation simpler for researchers, students and enthusiasts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project combines **OCR (Optical Character Recognition)** and **Machine Translation** techniques to detect, extract and translate Sanskrit text into English.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📜 **Project Description**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+AnuvaadAI consists of two major components:  
 
-### `npm run build`
+1. **Frontend (React + Tailwind CSS)**  
+   - A modern and intuitive UI for uploading files or entering text.  
+   - Displays the translated text dynamically with clean typography and visuals.  
+   - Includes a beautiful responsive layout and animated robot mascots for user engagement.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Backend (Flask / Node.js + Python NLP Models)**  
+   - Processes text and images sent from the frontend.  
+   - Uses **Tesseract OCR** for text recognition (for Sanskrit images).  
+   - Utilizes a **custom-trained MarianMT transformer model** for Sanskrit -> English translation.  
+   - Integrates with APIs to provide high-quality translation outputs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ **Tech Stack**
 
-### `npm run eject`
+### 🔹 Frontend:
+- React.js  
+- Tailwind CSS  
+- Axios  
+- JavaScript (ES6)  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔹 Backend:
+- Python (Flask)  
+- Tesseract OCR  
+- MarianMT (Hugging Face Transformers)  
+- PyTorch  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 Other Tools:
+- Node.js  
+- Git & GitHub  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 **How to Run the Project**
 
-## Learn More
+### 1. Clone the repository  
+```bash
+git clone https://github.com/shruti0731/MiniProject2.git
+cd MiniProject2
+cd MP-2-main
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Setup the Backend  
+```bash
+pip install -r requirements.txt
+python main.py
+```
+The backend server will start at:  
+`http://localhost:5000`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Setup the Frontend  
+```bash
+cd frontend
+npm install
+npm start
+```
+The frontend will start at:  
+`http://localhost:3000`
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Usage  
+- Enter Sanskrit text in the input box or upload an image containing Sanskrit text.  
+- Click **Translate**.  
+- The translated text will appear below, showing both **Sanskrit Text** and **English Translation**.  
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧾 **Results**
 
-### Advanced Configuration
+Below is a sample translation result from the app:  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Input (Sanskrit) | Output (English) |
+|------------------|------------------|
+| रामः जलं पिबति | Ram drinks water. |
 
-### Deployment
+![AnuvaadAI Screenshot](./screenshots/result.png)  
+*(UI Preview of the Translation Page)*  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 💡 **Key Features**
+✅ Text and image input support  
+✅ Real-time translation feedback  
+✅ Modern, minimal and responsive UI  
+✅ AI-powered translation using MarianMT  
+✅ Error handling and smooth UX  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# MiniProject2
->>>>>>> 69440d23ec006251b6c176976814f5e8b51a4492
+---
+
+## 🏁 **Future Enhancements**
+- Support for speech input and audio translation  
+- Integration with a multilingual translation model  
+- Improved accuracy using fine-tuned Sanskrit datasets  
+- Option to download translated results as PDF  
+
+---
+
+## 👩‍💻 **Contributors**
+- **Shruti Chavan**
+- **Srushti Jamdade**
+
+---
