@@ -90,7 +90,15 @@ The frontend will start at:
 
 ---
 
-## 🧾 **Results**
+## 🧾 **Results**  
+
+![AnuvaadAI Screenshot](./screenshots/UI2.png)  
+
+![AnuvaadAI Screenshot](./screenshots/fup.png)  
+
+![AnuvaadAI Screenshot](./screenshots/UI1.png)
+
+![AnuvaadAI Screenshot](./screenshots/IP1.png)  
 
 Below is a sample translation result from the app:  
 
@@ -98,8 +106,7 @@ Below is a sample translation result from the app:
 |------------------|------------------|
 | रामः जलं पिबति | Ram drinks water. |
 
-![AnuvaadAI Screenshot](./screenshots/result.png)  
-*(UI Preview of the Translation Page)*  
+![AnuvaadAI Screenshot](./screenshots/res.png)  
 
 ---
 
